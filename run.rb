@@ -4,7 +4,7 @@ require "csv"
 require 'colorize'
 
 agent,offset,result = Mechanize.new,0,[]
-puts ""
+puts
 
 while offset < 5350
     offset = offset.to_s
@@ -21,7 +21,7 @@ while offset < 5350
     offset += 20
 end
 
-puts ""
+puts
 puts "Success!".green
 puts "Writing to csv now ...".green
 
